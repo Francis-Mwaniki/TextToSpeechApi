@@ -38,6 +38,12 @@ tts.generateSpeech('hello world', function(err, speech) {
 }      
 ```
 
+### Test Demo
+
+```bash
+node test.js
+```
+
 
 
 
