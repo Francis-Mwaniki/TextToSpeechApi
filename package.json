@@ -1,0 +1,23 @@
+{
+  "name": "text-to-speech-converter",
+  "version": "1.0.0",
+  "description": "\"play around converter\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Francis-Mwaniki/TextToSpeechConverterApi"
+  },
+  "keywords": [
+    "\"speech",
+    "audio\""
+  ],
+  "author": "Francis-Mwaniki",
+  "license": "MIT",
+  "dependencies": {
+    "say": "^0.16.0",
+    "text-to-speech-js": "^1.1.10"
+  }
+}
