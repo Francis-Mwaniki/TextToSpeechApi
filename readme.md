@@ -27,16 +27,29 @@ brew install festival
 ## Usage
 
 ```javascript
-var tts = require('TextToSpeechApi');
+const TextToSpeech = require('text-to-speech-converter')
 
-tts.generateSpeech('hello world', function(err, speech) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(speech);
-  }
-}      
+async function testSpeechGeneration() {
+    try {
+        const outputFilePath = 'output';
+        const text = 'Hello francis, this is a test';
+        const result = await generateSpeech(text, outputFilePath);
+        console.log(result);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+testSpeechGeneration();
 ```
+### How it  works
+
+The `generateSpeech` function takes in two parameters:
+
+- `text`: The text to be converted to speech.
+- `outputFilePath`: The path to the output file where the speech will be saved.
+
+The function returns a promise that resolves to the path of the output file.
+
 
 ### Test Demo
 

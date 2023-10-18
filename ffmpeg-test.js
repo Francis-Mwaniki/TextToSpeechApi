@@ -1,4 +1,4 @@
-const generateSpeech = require('./index'); // Adjust the path accordingly
+const generateSpeech = require('./ffmpeg'); // Adjust the path accordingly
 
 async function testSpeechGeneration() {
     try {
